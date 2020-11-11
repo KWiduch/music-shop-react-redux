@@ -1,0 +1,53 @@
+.nav__container {
+  display: flex;
+  background: rgba(8, 8, 8, 0.952);
+  // background: greenyellow;
+  justify-content: space-around;
+  // border-bottom: solid 2px $navColor;
+  height: 7vh;
+  margin-bottom: 50px;
+  align-items: center;
+
+  .nav__title {
+    font-size: 35px;
+    font-weight: 500;
+    color: $navColorText;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    font-size: $smallSize;
+    list-style: none;
+    width: 400px;
+    justify-content: space-around;
+    // justify-items: center;
+    button {
+      background: none;
+      color: $navColorText;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      padding: 5px 20px;
+      font-size: 15px;
+      font-weight: 600;
+
+      &:hover {
+        color: $navColorTextHover;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+  .nav__right {
+    display: flex;
+    font-size: $smallSize;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+
+    .nav__signin {
+      color: #1ed760;
+      cursor: pointer;
+    }
+  }
+}

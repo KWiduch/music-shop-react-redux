@@ -1,0 +1,14 @@
+.musiclist__wrapper {
+  //   display: grid;
+  //   border: red solid 1px;
+  //   justify-items: center;
+  //   width: 780px;
+  width: 880px;
+  margin: 0 auto;
+  .musiclist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    //   justify-self: center;
+  }
+}
