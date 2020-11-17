@@ -3,7 +3,7 @@ import firebase from 'firebase';
 
 
 
-const firebaseAConfig = {
+const firebaseApp = firebase.initializeApp( {
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   apiKey: "AIzaSyAQvhyZnRUG94COToInD7E-BtxipTI3TYw",
   authDomain: "music-store-react.firebaseapp.com",
@@ -15,10 +15,10 @@ const firebaseAConfig = {
   measurementId: "G-T957JLBL6X"
 
 
-};
+});
 
 const db = firebaseApp.firestore();
-const auth = firebase.auth();
+// const auth = firebase.auth();
 // const storage=firebase.storage();
 
-export {db,auth};
+export {db};

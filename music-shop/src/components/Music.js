@@ -3,19 +3,19 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import './styles/styles.css'
 import { IconButton } from '@material-ui/core';
 
-const Music = () =>{
+const Music = ({title,author,price,image}) =>{
 
     return(
         <div className="music__container">
             <div className="music__img">
-                <img src=".\img\amalbum.jpg" alt=""/>
+                <img src={image} alt=""/>
             </div>
             <div className="music__description">
-                    <div className="music__price">14.99 pln</div>
+                    <div className="music__price">{price}</div>
                     <div className="music__desdown">
                         <div className="music__titleauthor">
-                            <div className="music__title">what went down</div>
-                            <div className="music__author">foals</div>
+                            <div className="music__title">{title}</div>
+    <div className="music__author">{author}</div>
                         </div>       
                         <div className="music__buyicon">
                         <IconButton  style={{background: "#b988b2", color: "white"}}>
