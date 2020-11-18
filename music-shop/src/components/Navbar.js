@@ -4,7 +4,12 @@ import './styles/styles.css'
 import { Badge, IconButton} from '@material-ui/core';
 
 
-const Navbar = () =>{
+const Navbar = ({backetcount,filterItems}) =>{
+
+    const typeHandler =(e)=>{
+        console.log(e.target)
+
+    } 
 
     return(
       <div className="nav__container">
@@ -13,22 +18,22 @@ const Navbar = () =>{
           </div>
           <ul>
               <li>
-                  <button>
+                  <button onClick={()=>filterItems('all')}>
                       All
                   </button>
               </li>
               <li>
-                   <button>
+                   <button onClick={()=>filterItems('rock')}>
                       Rock
                   </button>
               </li>
               <li>
-                 <button>
+                 <button onClick={()=>filterItems('rap')}>
                       Rap
                   </button>
               </li>
               <li>
-                   <button>
+                   <button onClick={()=>filterItems('pop')}>
                       Pop
                   </button>
               </li>
@@ -37,7 +42,7 @@ const Navbar = () =>{
             
               <div className="nav__cart">
                   <IconButton>
-                  <Badge badgeContent={4} color="secondary">
+                  <Badge badgeContent={backetcount} color="secondary">
                     <ShoppingCartIcon style={{color:"white"}}/>
                   </Badge>
                   </IconButton>

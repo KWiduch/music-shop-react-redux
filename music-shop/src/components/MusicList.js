@@ -1,30 +1,17 @@
 import React,{useEffect,useState} from 'react'
 import './Music'
 import { Music } from './Music'
-import {db} from './firebase'
 
-const MusicList = () =>{
 
-    const [music,setMusics] = useState([]);
-
-    useEffect(()=>{
-     db.collection("Music").onSnapshot(snapshot=>{
-      setMusics(snapshot.docs.map(doc=>({
-        id: doc.id,
-        music: doc.data(),
-        type: doc.data('id')
-      })))
-
-    })
-  },[])
+const MusicList = ({backetcount,setBacketcount,musics}) =>{
 
     return(
         <div className="musiclist__wrapper">
             <div className="musiclist">
             {
                 
-                music.map(({id,music,type})=>(
-                    <Music type={type} key={id} author={music.author} image={music.image} price={music.price} title={music.title}/>
+                musics.map(({id,informations})=>(
+                    <Music setBacketcount={setBacketcount} backetcount={backetcount}  key={id} author={informations.author} image={informations.image} price={informations.price} title={informations.title}/>
                 ))
             }
           </div>
