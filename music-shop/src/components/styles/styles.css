@@ -110,7 +110,8 @@
 }
 
 .music__container .music__description .music__desdown .music__titleauthor .music__author {
-  font-size: 12px;
+  margin-top: 3px;
+  font-size: 11px;
 }
 
 .musiclist__wrapper {
@@ -124,5 +125,175 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+}
+
+.cart__container {
+  border-radius: 20px;
+  padding: 0 40px;
+  height: 500px;
+  width: 1060px;
+  margin: 0 auto;
+  margin-top: 10vh;
+  background-color: rgba(255, 255, 255, 0.884);
+  font-size: 18px;
+}
+
+.cart__container .cart__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid grey 1px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+.cart__container .cart__head .cart__name {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.cart__container .cart__head .cart__itemsCount {
+  font-size: 25px;
+}
+
+.cart__container .cart__content {
+  height: 80%;
+}
+
+.cart__container .cart__content .cart__item {
+  height: 120px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: grey solid 1px;
+}
+
+.cart__container .cart__content .cart__item img {
+  max-width: 100px;
+  width: 100%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cart__container .cart__content .cart__item .cart__author {
+  font-size: 15px;
+}
+
+.cart__container .cart__content .cart__item .cart__title {
+  font-weight: 600;
+}
+
+.cart__container .cart__content .cart__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart__container .cart__content .cart__counter .cart__quantity {
+  font-size: 22px;
+}
+
+.cart__container .cart__content .cart__footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 244px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.cart__container .cart__content .cart__footer .cart__sum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+}
+
+.cart__container .cart__content .cart__footer .cart__checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 244px;
+  height: 40px;
+}
+
+.cart__container .cart__content .cart__footer .cart__checkout button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #b988b2;
+  color: white;
+  border: 1px solid #b988b2;
+  border-radius: 10px;
+  margin-top: 15px;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+
+.cart__container .cart__content .cart__footer .cart__checkout button:hover {
+  background-color: white;
+  color: #b988b2;
+  border: 1px solid #b988b2;
+}
+
+.cart__container .cart__content .cart__returnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 125px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.cart__container .cart__content .cart__returnContainer .cart__returnText {
+  font-weight: bold;
+  color: black;
+}
+
+.cart__container .cart__content .cart__returnContainer .cart__return {
+  padding-top: 2px;
 }
 /*# sourceMappingURL=styles.css.map */

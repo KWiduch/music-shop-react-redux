@@ -2,7 +2,7 @@
   width: 250px;
   height: 200px;
   background: $musicColorbackground;
-  border-bottom: solid 1px $musicColorPrice ;
+  border-bottom: solid 1px $musicColorPrice;
   font-weight: bold;
   margin-bottom: 40px;
   img {
@@ -25,7 +25,8 @@
       .music__titleauthor {
         flex-direction: column;
         .music__author {
-          font-size: 12px;
+          margin-top: 3px;
+          font-size: 11px;
         }
       }
     }

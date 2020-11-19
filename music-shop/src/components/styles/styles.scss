@@ -3,8 +3,11 @@ $navColorTextHover: #b988b2;
 $navColorText: white;
 $musicColorbackground: #e1dcf3;
 $musicColorPrice: #1ed760;
+$cartColorBackground: rgba(255, 255, 255, 0.884);
+$cartColorButton: #b988b2;
 $smallSize: 18px;
 
 @import "./Navbar";
 @import "./Music";
 @import "./MusicList";
+@import "./Cart";
