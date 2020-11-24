@@ -11,6 +11,7 @@ function App() {
 
   const [backetcount,setBacketcount]=useState(0);
   const [musics,setMusics] = useState([]);
+  const [items,setItems] = useState([]);
 
       useEffect(()=>{
      db.collection("Music").onSnapshot(snapshot=>{
@@ -41,10 +42,10 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' exact >
-            <ShopScreen backetcount={backetcount} filterItems={filterItems} musics={musics}  backetcount={backetcount} setBacketcount={setBacketcount}/>
+            <ShopScreen items={items} setItems={setItems} backetcount={backetcount} filterItems={filterItems} musics={musics}  backetcount={backetcount} setBacketcount={setBacketcount}/>
           </Route>
           <Route path='/cart'>
-            <Cart/>
+            <Cart items={items}/>
           </Route>
         </Switch>
       </Router>

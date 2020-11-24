@@ -3,7 +3,7 @@ import './Music'
 import { Music } from './Music'
 
 
-const MusicList = ({backetcount,setBacketcount,musics}) =>{
+const MusicList = ({backetcount,setBacketcount,musics,items,setItems}) =>{
 
     return(
         <div className="musiclist__wrapper">
@@ -11,10 +11,11 @@ const MusicList = ({backetcount,setBacketcount,musics}) =>{
             {
                 
                 musics.map(({id,informations})=>(
-                    <Music setBacketcount={setBacketcount} backetcount={backetcount}  key={id} author={informations.author} image={informations.image} price={informations.price} title={informations.title}/>
+                    <Music items={items} setItems={setItems} setBacketcount={setBacketcount} backetcount={backetcount} id={id} key={id} author={informations.author} image={informations.image} price={informations.price} title={informations.title}/>
                 ))
             }
           </div>
+          {console.log(items.length)}
         </div>
        
          

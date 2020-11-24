@@ -8,10 +8,6 @@ import { Cart } from './Cart';
 
 const Navbar = ({backetcount,filterItems}) =>{
 
-    const typeHandler =(e)=>{
-        console.log(e.target)
-
-    } 
 
     return(
       <div className="nav__container">
