@@ -3,12 +3,12 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import './styles/styles.css'
 import { IconButton } from '@material-ui/core';
 
-const Music = ({title,author,price,image,backetcount,setBacketcount,items,setItems}) =>{
+const Music = ({title,quantity,author,price,image,backetcount,setBacketcount,items,setItems}) =>{
 
     
-    const backetHandler =(image,price,title,author)=>{
+    const backetHandler =(image,price,title,author,quantity)=>{
         setItems([
-            ...items,{image,price,title,author}])
+            ...items,{image,price,title,author,quantity}])
         setBacketcount(backetcount+1);
     }
 
@@ -25,7 +25,7 @@ const Music = ({title,author,price,image,backetcount,setBacketcount,items,setIte
                             <div className="music__author">{author}</div>
                         </div>       
                         <div className="music__buyicon">
-                        <IconButton onClick={()=>backetHandler(image,price,title,author)} style={{background: "#b988b2", color: "white"}}>
+                        <IconButton onClick={()=>backetHandler(image,price,title,author,quantity)} style={{background: "#b988b2", color: "white"}}>
                             <AddShoppingCartIcon style={{color: "white"}}/>
                         </IconButton>
                     </div>    

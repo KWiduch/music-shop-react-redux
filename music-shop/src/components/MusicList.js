@@ -11,11 +11,10 @@ const MusicList = ({backetcount,setBacketcount,musics,items,setItems}) =>{
             {
                 
                 musics.map(({id,informations})=>(
-                    <Music items={items} setItems={setItems} setBacketcount={setBacketcount} backetcount={backetcount} id={id} key={id} author={informations.author} image={informations.image} price={informations.price} title={informations.title}/>
+                    <Music items={items} setItems={setItems} setBacketcount={setBacketcount} backetcount={backetcount} id={id} key={id} author={informations.author} image={informations.image} price={informations.price} title={informations.title} quantity={informations.quantity}/>
                 ))
             }
           </div>
-          {console.log(items.length)}
         </div>
        
          

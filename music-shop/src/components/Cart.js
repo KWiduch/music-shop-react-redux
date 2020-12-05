@@ -15,8 +15,8 @@ const Cart=({items})=>{
                </div>
                <div className="cart__content">{
                    
-                   items.map(({image,author,title,price})=>(
-                    <CartItem author={author} image={image} title={title} price={price}/>
+                   items.map(({image,author,title,price,quantity})=>(
+                    <CartItem quantity={quantity} author={author} image={image} title={title} price={price}/>
                 ))}
                 
 

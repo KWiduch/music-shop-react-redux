@@ -18,8 +18,6 @@ function App() {
       setMusics(snapshot.docs.map(doc=>({
         id: doc.id,
         informations: doc.data(),
-        gen: doc.data('id'),
-        // type: doc.data.id,
       })))
 
     })
