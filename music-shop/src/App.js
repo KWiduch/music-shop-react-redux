@@ -4,6 +4,7 @@ import './App.css';
 import {ShopScreen} from "./components/ShopScreen"
 import {Cart} from './components/Cart'
 import {db} from './components/firebase'
+import {LoginScreen} from './components/LoginScreen'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 
 
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route path='/cart'>
             <Cart items={items}/>
+          </Route>
+           <Route path='/login'>
+            <LoginScreen/>
           </Route>
         </Switch>
       </Router>

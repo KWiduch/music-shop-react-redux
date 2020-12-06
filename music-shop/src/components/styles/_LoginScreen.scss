@@ -1,0 +1,26 @@
+.login__container {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: $LoginColorBackground;
+  margin-top: 10vh;
+  width: 420px;
+  height: 420px;
+  //   display: flex;
+  //   flex-direction: row;
+  border: black solid 2px;
+  .login__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    .login__input {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -297,4 +297,41 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.login__container {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.884);
+  margin-top: 10vh;
+  width: 420px;
+  height: 420px;
+  border: black solid 2px;
+}
+
+.login__container .login__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.login__container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login__container form .login__input {
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -49,7 +49,7 @@ const Navbar = ({backetcount,filterItems}) =>{
                     </IconButton>
                   </Link>
               </div>
-              <Link  style={{ textDecoration: 'none'}}  to="/signIn" >
+              <Link  style={{ textDecoration: 'none'}}  to="/login" >
                 <div className="nav__signin">Sign in </div>
                 </Link>
           </div>

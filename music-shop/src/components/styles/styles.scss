@@ -4,6 +4,7 @@ $navColorText: white;
 $musicColorbackground: #e1dcf3;
 $musicColorPrice: #1ed760;
 $cartColorBackground: rgba(255, 255, 255, 0.884);
+$LoginColorBackground: rgba(255, 255, 255, 0.884);
 $cartColorButton: #b988b2;
 $smallSize: 18px;
 
@@ -12,3 +13,4 @@ $smallSize: 18px;
 @import "./MusicList";
 @import "./Cart";
 @import "./CartItem";
+@import "./LoginScreen";
