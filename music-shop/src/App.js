@@ -10,7 +10,7 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 
 function App() {
 
-  const [backetcount,setBacketcount]=useState(0);
+  const [backetcount,setBacketcount] = useState(0);
   const [musics,setMusics] = useState([]);
   const [items,setItems] = useState([]);
 
@@ -24,8 +24,8 @@ function App() {
     })
   },[musics.informations])
 
-      const filterItems =(category)=>{
-        if(category==='all'){
+      const filterItems = (category) => {
+        if (category === 'all') {
           // setMusics(musics)??
           
         }
@@ -41,7 +41,13 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' exact >
-            <ShopScreen items={items} setItems={setItems} backetcount={backetcount} filterItems={filterItems} musics={musics}  backetcount={backetcount} setBacketcount={setBacketcount}/>
+            <ShopScreen
+              items={items}
+              setItems={setItems}
+               backetcount={backetcount}
+              filterItems={filterItems}
+               musics={musics}  backetcount={backetcount} setBacketcount={setBacketcount}
+            />
           </Route>
           <Route path='/cart'>
             <Cart items={items}/>
