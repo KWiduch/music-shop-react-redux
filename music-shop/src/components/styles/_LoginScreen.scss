@@ -16,11 +16,46 @@
     font-size: 30px;
     font-weight: bold;
   }
-  form {
+  Form {
     display: flex;
     flex-direction: column;
     .login__input {
       margin-bottom: 30px;
+    }
+    .login_button {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      width: 344px;
+      height: 56px;
+      button {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        // font-weight: bold;
+        background-color: $cartColorButton;
+        color: white;
+        border: 1px solid $cartColorButton;
+        border-radius: 4px;
+        margin-top: 30px;
+        transition: ease all 0.3s;
+        &:hover {
+          background-color: white;
+          color: $cartColorButton;
+          border: 1px solid $cartColorButton;
+        }
+      }
+    }
+    .login__info {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      cursor: pointer;
     }
   }
 }

@@ -321,7 +321,7 @@
   font-weight: bold;
 }
 
-.login__container form {
+.login__container Form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +331,56 @@
           flex-direction: column;
 }
 
-.login__container form .login__input {
+.login__container Form .login__input {
   margin-bottom: 30px;
+}
+
+.login__container Form .login_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 344px;
+  height: 56px;
+}
+
+.login__container Form .login_button button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  background-color: #b988b2;
+  color: white;
+  border: 1px solid #b988b2;
+  border-radius: 4px;
+  margin-top: 30px;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+
+.login__container Form .login_button button:hover {
+  background-color: white;
+  color: #b988b2;
+  border: 1px solid #b988b2;
+}
+
+.login__container Form .login__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
